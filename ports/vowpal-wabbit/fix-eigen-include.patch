@@ -1,0 +1,29 @@
+diff --git a/vowpalwabbit/core/src/qr_decomposition.h b/vowpalwabbit/core/src/qr_decomposition.h
+index a097ca5c2..7467c4e65 100644
+--- a/vowpalwabbit/core/src/qr_decomposition.h
++++ b/vowpalwabbit/core/src/qr_decomposition.h
+@@ -8,8 +8,8 @@
+ // https://eigen.tuxfamily.org/dox/TopicPreprocessorDirectives.html#TopicPreprocessorDirectivesPerformance
+ #define EIGEN_MAX_ALIGN_BYTES 32
+ 
+-#include <Eigen/Dense>
+-#include <Eigen/SparseCore>
++#include <eigen3/Eigen/Dense>
++#include <eigen3/Eigen/SparseCore>
+ #include <set>
+ 
+ namespace VW
+index 4b1bf63b4..ab5efdb25 100644
+--- a/vowpalwabbit/core/src/reductions/cb/details/large_action_space.h
++++ b/vowpalwabbit/core/src/reductions/cb/details/large_action_space.h
+@@ -16,8 +16,8 @@
+ // https://eigen.tuxfamily.org/dox/TopicPreprocessorDirectives.html#TopicPreprocessorDirectivesPerformance
+ #define EIGEN_MAX_ALIGN_BYTES 32
+ 
+-#include <Eigen/Dense>
+-#include <Eigen/SparseCore>
++#include <eigen3/Eigen/Dense>
++#include <eigen3/Eigen/SparseCore>
+ #include <iostream>
+ #include <set>
+ #include <unordered_map>
