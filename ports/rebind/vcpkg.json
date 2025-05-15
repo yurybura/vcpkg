@@ -1,0 +1,14 @@
+{
+  "name": "rebind",
+  "version": "1.2.0",
+  "description": "🎲 Simple, compiler agnostic, C++23 reflection library (for aggregates and enums)",
+  "homepage": "https://github.com/Curve/rebind",
+  "license": "MIT",
+  "dependencies": [
+    "boost-preprocessor",
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    }
+  ]
+}

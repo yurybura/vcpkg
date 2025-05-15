@@ -8144,6 +8144,10 @@
       "baseline": "2.56.2",
       "port-version": 2
     },
+    "rebind": {
+      "baseline": "1.2.0",
+      "port-version": 0
+    },
     "recast": {
       "baseline": "deprecated",
       "port-version": 0
