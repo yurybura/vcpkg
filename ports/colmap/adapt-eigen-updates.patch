@@ -1,0 +1,13 @@
+diff --git a/src/colmap/estimators/covariance.cc b/src/colmap/estimators/covariance.cc
+index 6040583e..af7d3adf 100644
+--- a/src/colmap/estimators/covariance.cc
++++ b/src/colmap/estimators/covariance.cc
+@@ -182,7 +182,7 @@ bool ComputeLInverse(Eigen::SparseMatrix<double>& S, Eigen::MatrixXd& L_inv) {
+ 
+   const Eigen::VectorXd D_dense = ldlt_S.vectorD();
+ 
+-  const int rank = D_dense.nonZeros();
++  const int rank = (D_dense.array() != 0).count(); // The nonZeros function no longer exists for the Matrix type
+   if (rank < S.rows()) {
+     LOG(WARNING) << StringPrintf(
+         "Unable to compute covariance. The Schur complement on pose/other "
