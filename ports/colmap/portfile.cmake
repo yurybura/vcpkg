@@ -10,6 +10,8 @@ vcpkg_from_github(
     PATCHES
         no-glu.diff
         fix-flann.patch
+	adapt-eigen-updates.patch
+	fix-cassert-include.patch
 )
 
 if (NOT TRIPLET_SYSTEM_ARCH STREQUAL "x64" AND ("cuda" IN_LIST FEATURES OR "cuda-redist" IN_LIST FEATURES))

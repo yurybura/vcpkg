@@ -10,6 +10,7 @@ vcpkg_from_github(
         cmake_remove_bin_targets.patch
         fix-build-error-with-fmt11.patch
         fix-rapidjson-target.patch
+	fix-eigen-include.patch
 )
 
 vcpkg_cmake_configure(

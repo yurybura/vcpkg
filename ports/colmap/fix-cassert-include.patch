@@ -1,0 +1,103 @@
+diff --git a/src/colmap/estimators/bundle_adjustment.cc b/src/colmap/estimators/bundle_adjustment.cc
+index 05455857..281bde76 100644
+--- a/src/colmap/estimators/bundle_adjustment.cc
++++ b/src/colmap/estimators/bundle_adjustment.cc
+@@ -40,7 +40,7 @@
+ #include "colmap/util/timer.h"
+ 
+ #include <iomanip>
+-
++#include <cassert>
+ namespace colmap {
+ 
+ ////////////////////////////////////////////////////////////////////////////////
+diff --git a/src/colmap/estimators/manifold.h b/src/colmap/estimators/manifold.h
+index 1a293e3c..2292a228 100644
+--- a/src/colmap/estimators/manifold.h
++++ b/src/colmap/estimators/manifold.h
+@@ -35,7 +35,7 @@
+ namespace colmap {
+ 
+ #include <cmath>
+-
++#include <cassert>
+ #include "ceres/ceres.h"
+ 
+ inline void SetQuaternionManifold(ceres::Problem* problem, double* quat_xyzw) {
+diff --git a/src/colmap/feature/sift.cc b/src/colmap/feature/sift.cc
+index 0061ccbb..71e8680b 100644
+--- a/src/colmap/feature/sift.cc
++++ b/src/colmap/feature/sift.cc
+@@ -54,7 +54,7 @@
+ #include <map>
+ #include <memory>
+ #include <mutex>
+-
++#include <cassert>
+ #include <Eigen/Geometry>
+ 
+ namespace colmap {
+diff --git a/src/colmap/retrieval/inverted_file.h b/src/colmap/retrieval/inverted_file.h
+index 011d3c09..49033f2c 100644
+--- a/src/colmap/retrieval/inverted_file.h
++++ b/src/colmap/retrieval/inverted_file.h
+@@ -43,7 +43,7 @@
+ #include <unordered_map>
+ #include <unordered_set>
+ #include <vector>
+-
++#include <cassert>
+ #include <Eigen/Core>
+ 
+ namespace colmap {
+diff --git a/src/colmap/retrieval/inverted_file_entry.h b/src/colmap/retrieval/inverted_file_entry.h
+index e8334992..0fe25b00 100644
+--- a/src/colmap/retrieval/inverted_file_entry.h
++++ b/src/colmap/retrieval/inverted_file_entry.h
+@@ -30,7 +30,7 @@
+ #pragma once
+ 
+ #include "colmap/retrieval/geometry.h"
+-
++#include <cassert>
+ #include <bitset>
+ #include <fstream>
+ 
+diff --git a/src/colmap/retrieval/visual_index.h b/src/colmap/retrieval/visual_index.h
+index 8bc91eac..f1b5e802 100644
+--- a/src/colmap/retrieval/visual_index.h
++++ b/src/colmap/retrieval/visual_index.h
+@@ -29,6 +29,7 @@
+ 
+ #pragma once
+ 
++#include <cassert>
+ #include "colmap/feature/types.h"
+ #include "colmap/math/math.h"
+ #include "colmap/retrieval/inverted_file.h"
+diff --git a/src/colmap/sfm/observation_manager.cc b/src/colmap/sfm/observation_manager.cc
+index 04aab219..846969e1 100644
+--- a/src/colmap/sfm/observation_manager.cc
++++ b/src/colmap/sfm/observation_manager.cc
+@@ -28,7 +28,7 @@
+ // POSSIBILITY OF SUCH DAMAGE.
+ 
+ #include "colmap/sfm/observation_manager.h"
+-
++#include <cassert>
+ #include "colmap/estimators/alignment.h"
+ #include "colmap/geometry/triangulation.h"
+ #include "colmap/scene/camera.h"
+diff --git a/src/colmap/util/controller_thread.h b/src/colmap/util/controller_thread.h
+index bd97ebea..f52a3411 100644
+--- a/src/colmap/util/controller_thread.h
++++ b/src/colmap/util/controller_thread.h
+@@ -28,7 +28,7 @@
+ // POSSIBILITY OF SUCH DAMAGE.
+ 
+ #pragma once
+-
++#include <cassert>
+ #include "colmap/util/base_controller.h"
+ #include "colmap/util/threading.h"
+ 

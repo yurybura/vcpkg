@@ -27,6 +27,7 @@ vcpkg_from_github(
         0006-remove-apple-sys-path.patch
         0007-fix-g2o.patch
         0008-fix-pcl-include.patch
+	0009-fix-eigen-version.patch
 )
 
 vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
