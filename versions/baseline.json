@@ -2644,6 +2644,10 @@
       "baseline": "3.15.0",
       "port-version": 0
     },
+    "eraser": {
+      "baseline": "2.2.1",
+      "port-version": 0
+    },
     "ereignis": {
       "baseline": "2.3",
       "port-version": 0
