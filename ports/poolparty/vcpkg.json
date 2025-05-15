@@ -1,0 +1,13 @@
+{
+  "name": "poolparty",
+  "version": "3.0.1",
+  "description": "🌊 A simple, yet versatile C++ Thread-Pool library",
+  "homepage": "https://github.com/Curve/poolparty",
+  "license": "MIT",
+  "dependencies": [
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    }
+  ]
+}
